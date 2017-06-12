@@ -24,7 +24,7 @@ if (appid == 0 || appid ==1){
     appid = 'all';
 }*/
 
-var reg_images = /^[^\/]+\/(ssr?-with-net-speeder||shadowsocksr-docker)(:[^ ]+)?$/i
+var reg_images = /^[^\/]+\/(ssr?-with-net-speeder||shadowsocksr-docker||ssr-with-kcptun)(:[^ ]+)?$/i
 
 app.get('/', function (req, res) {
     getit(appid, function (err, data) {
